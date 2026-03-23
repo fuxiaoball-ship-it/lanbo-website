@@ -139,6 +139,12 @@ export default function LanboStudyBaseWebsite() {
             <p className="mt-4 text-base leading-8 text-slate-600">
               业务涵盖科技展示、科普教育、研学实践、创客活动、产业参访与创新启发等多个方向，致力于让不同人群走进智能制造世界，在实践中理解科技，在创造中培养能力。
             </p>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              依托泸州航发增材制造产业园，园区内已集聚多家增材制造相关企业，涵盖材料研发、设备制造、工艺应用等多个方向，形成完整产业生态。
+            </p>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              同时汇聚了一支由工程师、技术专家及产业导师组成的专业团队，可为中小学生提供启蒙教育，也可为在校大学生提供产学研结合的实训课程与实践平台，实现从认知到应用的全链条培养。
+            </p>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
