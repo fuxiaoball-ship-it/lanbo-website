@@ -92,9 +92,9 @@ export default function LuzhouAviation3DSpace() {
               <div className="inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs tracking-[0.18em] text-white/75">
                 AI × 3D打印 × 智能制造
               </div>
-              <h1 className="mt-8 text-5xl font-semibold tracking-tight lg:text-7xl lg:leading-[1.02]">
+              <h1 className="mt-10 text-4xl lg:text-6xl leading-tight">
                 泸州航发3D智造空间
-                <span className="mt-3 block text-cyan-300">面向未来智能制造的人才启蒙与实践平台</span>
+                <span className="mt-6 block text-cyan-300">面向未来智能制造的人才启蒙与实践平台</span>
               </h1>
               <p className="mt-8 max-w-xl text-base leading-8 text-white/75 lg:text-lg">
                 以AI创意设计与3D打印制造为核心，构建从认知启蒙到实践创造的完整创客体系，让更多青少年、大学生与合作单位走进智能制造世界。
