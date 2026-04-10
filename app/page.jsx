@@ -89,15 +89,15 @@ export default function LuzhouAviation3DSpace() {
 
           <div className="grid gap-14 pt-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-20">
             <div className="max-w-2xl">
-              <div className="inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs tracking-[0.18em] text-white/90">
-                AI × 3D打印 × 智能制造
-              </div>
+              <div className="inline-flex items-center rounded-full px-5 py-2.5 text-sm lg:text-base text-white/90 border border-white/30 bg-white/10 backdrop-blur-md">
+  AI × 3D打印 × 智能制造
+</div>
              <div className="mt-8">
-  <div className="text-lg lg:text-xl font-medium text-white/90">
+  <div className="text-xl lg:text-2xl font-semibold font-medium text-white/90">
     泸州航发3D智造空间
   </div>
 
-  <h1 className="mt-4 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
+  <h1 className="mt-6 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
     面向未来智能制造的
     <span className="block text-white">人才启蒙与实践平台</span>
   </h1>
