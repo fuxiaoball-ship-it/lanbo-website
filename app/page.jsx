@@ -93,7 +93,7 @@ export default function LuzhouAviation3DSpace() {
   AI × 3D打印 × 智能制造
 </div>
              <div className="mt-8">
- <div className="mt-6 text-2xl lg:text-3xl font-semibold text-white/95 tracking-tight">
+ <div className="mt-7 text-[26px] lg:text-[32px] font-semibold text-white/95 tracking-tight">
   泸州航发3D智造空间
 </div>
 
