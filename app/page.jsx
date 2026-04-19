@@ -1,14 +1,16 @@
 export default function LuzhouAviation3DSpace() {
   const images = {
-    hero:
-      'https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1800',
-    engineAi: '/images/engine-ai.jpg',
-    enginePrint: '/images/engine-print.jpg',
-    industryFactory: '/images/industry-factory.jpg',
-    industryExpert: '/images/industry-expert.jpg',
-    serviceLab: '/images/service-lab.jpg',
-    contactLab: '/images/contact-lab.jpg',
-  };
+  hero:
+    'https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1800',
+
+  engineAi: '/images/engine-ai.jpg',
+  enginePrint: '/images/engine-print.jpg',
+  industryFactory: '/images/industry-factory.jpg',
+  industryExpert: '/images/industry-expert.jpg',
+
+  service: '/images/service-lab.jpg',   // ← 新增这行
+  contactLab: '/images/contact-lab.jpg',
+};;
 
   const pathways = [
     {
@@ -69,72 +71,73 @@ export default function LuzhouAviation3DSpace() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-           <header className="relative overflow-hidden bg-[#06162d] text-white">
+      <header className="sticky top-0 z-50 overflow-hidden bg-[#06162d]/85 text-white backdrop-blur-md">
         <div className="absolute inset-0 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c]" />
-        <div className="max-w-7xl mx-auto px-6 pt-6 pb-12">
-          <div className="flex items-center justify-between border-b border-white/10 pb-5">
-  <div className="flex items-center gap-3">
-    <img
-      src="/images/hf-logo.png"
-      alt="泸州航发logo"
-      className="h-10 w-auto object-contain"
-    />
 
-    <div className="text-sm tracking-wide text-white/80">
-      泸州蓝博航发职业培训学校有限公司
-    </div>
-  </div>
-            <nav className="hidden gap-8 text-sm text-white/70 md:flex">
-              <a href="#engines" className="transition hover:text-white">
+        <div className="relative mx-auto max-w-7xl px-6 pt-6 pb-16 lg:px-10 lg:pt-8 lg:pb-20">
+          <div className="flex items-center justify-between border-b border-white/10 pb-3">
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/hf-logo.png"
+                alt="泸州航发logo"
+                className="h-9 w-auto object-contain"
+              />
+              <div className="text-sm font-medium tracking-wide text-white/85">
+                泸州蓝博航发职业培训学校有限公司
+              </div>
+            </div>
+
+            <nav className="hidden gap-8 text-sm font-medium text-white/70 md:flex">
+              <a href="#engines" className="transition duration-200 hover:text-white">
                 双引擎
               </a>
-              <a href="#pathway" className="transition hover:text-white">
+              <a href="#pathway" className="transition duration-200 hover:text-white">
                 成长路径
               </a>
-              <a href="#industry" className="transition hover:text-white">
+              <a href="#industry" className="transition duration-200 hover:text-white">
                 产业资源
               </a>
-              <a href="#services" className="transition hover:text-white">
+              <a href="#services" className="transition duration-200 hover:text-white">
                 服务内容
               </a>
-              <a href="#contact" className="transition hover:text-white">
+              <a href="#contact" className="transition duration-200 hover:text-white">
                 合作咨询
               </a>
             </nav>
           </div>
 
-          <div className="grid gap-14 pt-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-8">
+          <div className="grid gap-10 pt-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-8">
             <div className="max-w-2xl">
-            
-
               <div className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm text-white/90 backdrop-blur-md">
                 AI × 3D打印 × 智能制造
               </div>
 
-              <div className="mt-7 text-[26px] lg:text-[32px] font-semibold text-white/95 tracking-tight">
+              <div className="mt-6 text-[26px] font-semibold tracking-tight text-white/95 lg:text-[32px]">
                 泸州航发3D智造空间
               </div>
 
-              <h1 className="mt-6 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
+              <h1 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tight text-cyan-300 lg:text-6xl">
                 面向未来智能制造的
                 <span className="block text-white">人才启蒙与实践平台</span>
               </h1>
-
-              <p className="mt-8 max-w-xl text-base leading-8 text-white/75 lg:text-lg">
+<p className="mt-4 text-sm tracking-[0.12em] text-cyan-200/80 uppercase">
+  依托泸州航发产业资源与专业技术团队打造
+</p>
+              <p className="mt-7 max-w-xl text-base leading-8 text-white/75 lg:text-lg">
                 以AI创意设计与3D打印制造为核心，构建从认知启蒙到实践创造的完整创客体系，
                 让更多青少年、大学生与合作单位走进智能制造世界。
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-9 flex flex-wrap gap-4">
                 <a
                   href="#services"
-                  className="rounded-full bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+                  className="rounded-full bg-white px-7 py-4 text-base font-medium text-slate-900 transition hover:-translate-y-0.5 hover:shadow-lg"
                 >
                   了解服务
                 </a>
                 <a
                   href="#contact"
-                  className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+                  className="rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10 hover:shadow-lg"
                 >
                   预约参观
                 </a>
@@ -142,7 +145,7 @@ export default function LuzhouAviation3DSpace() {
             </div>
 
             <div>
-              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl backdrop-blur">
+             <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
                 <img
                   src={images.hero}
                   alt="3D打印设备与智能制造场景"
@@ -227,10 +230,7 @@ export default function LuzhouAviation3DSpace() {
           </div>
         </section>
 
-        <section
-          id="industry"
-          className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24"
-        >
+        <section id="industry" className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
           <div className="grid gap-6 xl:grid-cols-[1.1fr_0.7fr_0.7fr] xl:items-stretch">
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 lg:p-10">
               <div className="text-sm tracking-[0.18em] text-cyan-700">产业资源与技术支撑</div>
@@ -265,49 +265,65 @@ export default function LuzhouAviation3DSpace() {
           </div>
         </section>
 
-        <section id="services" className="mx-auto max-w-7xl px-6 py-6 lg:px-10 lg:py-12">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
-            <div>
-              <div className="text-sm tracking-[0.18em] text-cyan-700">服务内容</div>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight">
-                面向不同人群的创客服务体系
-              </h2>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
-                以AI创意设计与3D智造实践为主线，针对不同年龄和不同合作对象，
-                形成分层次、多场景、可拓展的服务体系。
-              </p>
+       <section
+  id="services"
+  className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24"
+>
+  <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+    
+    <div>
+      <div className="text-sm font-semibold tracking-[0.25em] text-cyan-600">
+        服务内容
+      </div>
 
-              <div className="mt-8 grid gap-4">
-                {services.map((item) => (
-                  <div
-                    key={item.group}
-                    className="rounded-[1.5rem] border border-slate-200 bg-white p-6"
-                  >
-                    <div className="text-lg font-semibold">{item.group}</div>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {item.items.map((sub) => (
-                        <span
-                          key={sub}
-                          className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700"
-                        >
-                          {sub}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+      <h2 className="mt-4 text-4xl font-semibold leading-tight text-slate-900">
+        面向不同人群的创客服务体系
+      </h2>
+
+      <p className="mt-6 text-lg leading-9 text-slate-600">
+        以AI创意设计与3D智造实践为主线，
+        针对不同年龄和不同合作对象，
+        形成分层次、多场景、可拓展的服务体系。
+      </p>
+
+      <div className="mt-8 grid gap-3">
+
+        {services.map((item) => (
+          <div
+            key={item.group}
+            className="rounded-[1.5rem] border border-slate-200 bg-white px-6 py-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg"
+          >
+            <div className="text-lg font-semibold text-slate-900">
+              {item.group}
             </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-              <img
-                src={images.serviceLab}
-                alt="大学生创新实验室与创客实训场景"
-                className="h-[520px] w-full object-cover"
-              />
+            <div className="mt-3 flex flex-wrap gap-2">
+              {item.items.map((sub) => (
+                <span
+                  key={sub}
+                  className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700"
+                >
+                  {sub}
+                </span>
+              ))}
             </div>
+
           </div>
-        </section>
+        ))}
+
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl">
+      <img
+        src={images.service}
+        alt="创客教育场景"
+        className="h-[520px] w-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
 
         <section id="resources" className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
           <div className="max-w-3xl">
@@ -321,7 +337,7 @@ export default function LuzhouAviation3DSpace() {
             {resources.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[1.75rem] border border-slate-200 bg-white p-8"
+                className="rounded-[1.75rem] border border-slate-200 bg-white p-8 transition hover:-translate-y-1 hover:shadow-lg"
               >
                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-600">{item.desc}</p>
@@ -336,13 +352,13 @@ export default function LuzhouAviation3DSpace() {
               <div className="text-sm tracking-[0.18em] text-cyan-700">合作与行动</div>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight">
                 走进3D智造空间
-                <span className="mt-2 block">开启智能制造体验与合作</span>
+                <span className="mt-2 block">开启智能制造体验、研学与合作</span>
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
                 欢迎学校、家长、大学院校及合作单位咨询预约，了解科普体验、创客课程、研学实践、
                 大学生实训与产业参访等服务内容。
               </p>
-              <div className="mt-8 grid gap-4">
+              <div className="mt-6 grid gap-3">
                 <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
                   联系人：付老师
                 </div>
@@ -350,7 +366,7 @@ export default function LuzhouAviation3DSpace() {
                   联系电话：13982755554
                 </div>
                 <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
-                  电子邮箱：10900746@qq.com
+                  电子邮箱：109007346@qq.com
                 </div>
               </div>
             </div>
