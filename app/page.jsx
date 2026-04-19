@@ -2,23 +2,19 @@ export default function LuzhouAviation3DSpace() {
   const images = {
     hero:
       'https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1800',
-    ai:
-      'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    printing:
-      'https://images.pexels.com/photos/20341733/pexels-photo-20341733.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    workshop:
-      'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    industry:
-      'https://images.pexels.com/photos/256302/pexels-photo-256302.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    contact:
-      'https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    engineAi: '/images/engine-ai.jpg',
+    enginePrint: '/images/engine-print.jpg',
+    industryFactory: '/images/industry-factory.jpg',
+    industryExpert: '/images/industry-expert.jpg',
+    serviceLab: '/images/service-lab.jpg',
+    contactLab: '/images/contact-lab.jpg',
   };
 
   const pathways = [
     {
       step: '01',
       title: '认知启蒙',
-      desc: '了解AI、3D打印与智能制造的基本概念，建立面向未来的技术认知。',
+      desc: '了解AI、3D打印与智能制造的基础概念，建立面向未来的技术认知。',
     },
     {
       step: '02',
@@ -79,33 +75,44 @@ export default function LuzhouAviation3DSpace() {
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
             <div className="text-sm tracking-wide text-white/80">泸州航发3D智造空间</div>
             <nav className="hidden gap-8 text-sm text-white/70 md:flex">
-              <a href="#engines" className="transition hover:text-white">双引擎</a>
-              <a href="#pathway" className="transition hover:text-white">成长路径</a>
-              <a href="#industry" className="transition hover:text-white">产业资源</a>
-              <a href="#services" className="transition hover:text-white">服务内容</a>
-              <a href="#contact" className="transition hover:text-white">合作咨询</a>
+              <a href="#engines" className="transition hover:text-white">
+                双引擎
+              </a>
+              <a href="#pathway" className="transition hover:text-white">
+                成长路径
+              </a>
+              <a href="#industry" className="transition hover:text-white">
+                产业资源
+              </a>
+              <a href="#services" className="transition hover:text-white">
+                服务内容
+              </a>
+              <a href="#contact" className="transition hover:text-white">
+                合作咨询
+              </a>
             </nav>
           </div>
 
           <div className="grid gap-14 pt-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-20">
             <div className="max-w-2xl">
-              <div className="inline-flex items-center rounded-full px-5 py-2.5 text-sm lg:text-base text-white/90 border border-white/30 bg-white/10 backdrop-blur-md">
-  AI × 3D打印 × 智能制造
-</div>
-             <div className="mt-8">
- <div className="mt-7 text-[26px] lg:text-[32px] font-semibold text-white/95 tracking-tight">
-  泸州航发3D智造空间
-</div>
+              <div className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm text-white/90 backdrop-blur-md">
+                AI × 3D打印 × 智能制造
+              </div>
 
-  <h1 className="mt-6 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
-    面向未来智能制造的
-    <span className="block text-white">人才启蒙与实践平台</span>
-  </h1>
-</div>
+              <div className="mt-7 text-[26px] lg:text-[32px] font-semibold text-white/95 tracking-tight">
+                泸州航发3D智造空间
+              </div>
+
+              <h1 className="mt-6 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
+                面向未来智能制造的
+                <span className="block text-white">人才启蒙与实践平台</span>
+              </h1>
+
               <p className="mt-8 max-w-xl text-base leading-8 text-white/75 lg:text-lg">
-  以AI创意设计与3D打印制造为核心，构建从认知启蒙到实践创造的完整创客体系，
-  让更多青少年、大学生与合作单位走进智能制造世界。
-</p>
+                以AI创意设计与3D打印制造为核心，构建从认知启蒙到实践创造的完整创客体系，
+                让更多青少年、大学生与合作单位走进智能制造世界。
+              </p>
+
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
                   href="#services"
@@ -149,8 +156,12 @@ export default function LuzhouAviation3DSpace() {
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-              <img src={images.ai} alt="AI创意设计与数字创作" className="h-72 w-full object-cover" />
+            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+              <img
+                src={images.engineAi}
+                alt="AI设计与数字建模场景"
+                className="h-72 w-full object-cover"
+              />
               <div className="p-8">
                 <div className="text-sm tracking-[0.18em] text-cyan-700">AI创意设计</div>
                 <h3 className="mt-4 text-3xl font-semibold">从创意生成到数字表达</h3>
@@ -163,11 +174,15 @@ export default function LuzhouAviation3DSpace() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-              <img src={images.printing} alt="3D打印设备与制造实践" className="h-72 w-full object-cover" />
+            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+              <img
+                src={images.enginePrint}
+                alt="3D打印制造过程"
+                className="h-72 w-full object-cover"
+              />
               <div className="p-8">
                 <div className="text-sm tracking-[0.18em] text-cyan-700">3D智造实践</div>
-                <h3 className="mt-4 text-3xl font-semibold">从设计原型到实体输出</h3>
+                <h3 className="mt-4 text-3xl font-semibold">从设计到实体制造</h3>
                 <ul className="mt-6 space-y-3 text-slate-600">
                   <li>• 3D打印技术应用</li>
                   <li>• 建模与制造流程</li>
@@ -182,10 +197,15 @@ export default function LuzhouAviation3DSpace() {
         <section id="pathway" className="mx-auto max-w-7xl px-6 py-6 lg:px-10 lg:py-12">
           <div className="rounded-[2rem] bg-[#071a33] px-8 py-10 text-white lg:px-10 lg:py-12">
             <div className="text-sm tracking-[0.18em] text-cyan-300">能力成长路径</div>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight lg:text-5xl">一条完整的创客成长路径</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight lg:text-5xl">
+              一条完整的创客成长路径
+            </h2>
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {pathways.map((item) => (
-                <div key={item.step} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                <div
+                  key={item.step}
+                  className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6"
+                >
                   <div className="text-sm tracking-[0.18em] text-cyan-300">{item.step}</div>
                   <h3 className="mt-4 text-2xl font-semibold">{item.title}</h3>
                   <p className="mt-4 text-sm leading-7 text-white/75">{item.desc}</p>
@@ -195,33 +215,40 @@ export default function LuzhouAviation3DSpace() {
           </div>
         </section>
 
-        <section id="industry" className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[0.92fr_1.08fr] lg:px-10 lg:py-24">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 lg:p-10">
-            <div className="text-sm tracking-[0.18em] text-cyan-700">产业资源与技术支撑</div>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight">从产业园到技术团队的真实支撑</h2>
-            <p className="mt-6 text-base leading-8 text-slate-600">
-              依托泸州航发增材制造产业园，园区内已入驻多家增材制造相关企业，覆盖材料研发、设备制造、工艺应用等多个方向，形成较为完整的产业生态。
-            </p>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              同时拥有由工程师、技术专家及产业导师组成的专业团队，不仅服务中小学生启蒙教育，也为在校大学生提供产学研实训课程与实践平台。
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-              <img src={images.industry} alt="产业园与制造环境场景" className="h-full w-full object-cover" />
-            </div>
+        <section
+          id="industry"
+          className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24"
+        >
+          <div className="grid gap-6 xl:grid-cols-[1.1fr_0.7fr_0.7fr] xl:items-stretch">
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 lg:p-10">
-              <div className="text-sm tracking-[0.18em] text-cyan-700">核心支撑</div>
-              <ul className="mt-6 space-y-4 text-slate-600">
-                <li>• 入驻企业：材料、设备、应用等多方向协同</li>
-                <li>• 技术团队：工程师、技术专家、创客导师共同参与</li>
-                <li>• 应用场景：科普、研学、创客活动、产业体验、大学生实训</li>
-                <li>• 平台价值：打通认知启蒙、实践训练与产业理解</li>
-              </ul>
-              <div className="mt-8 overflow-hidden rounded-[1.5rem]">
-                <img src={images.printing} alt="3D打印设备运行细节" className="h-56 w-full object-cover" />
-              </div>
+              <div className="text-sm tracking-[0.18em] text-cyan-700">产业资源与技术支撑</div>
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+                从产业园到技术团队的真实支撑
+              </h2>
+              <p className="mt-6 text-base leading-8 text-slate-600">
+                依托泸州航发增材制造产业园，园区内已入驻多家增材制造相关企业，
+                覆盖材料研发、设备制造、工艺应用等多个方向，形成较为完整的产业生态。
+              </p>
+              <p className="mt-4 text-base leading-8 text-slate-600">
+                同时拥有由工程师、技术专家及产业导师组成的专业团队，
+                不仅服务中小学生启蒙教育，也为在校大学生提供产学研实训课程与实践平台。
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
+              <img
+                src={images.industryFactory}
+                alt="大型3D打印工场场景"
+                className="h-full min-h-[520px] w-full object-cover"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
+              <img
+                src={images.industryExpert}
+                alt="专家研究3D打印设备"
+                className="h-full min-h-[520px] w-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -230,17 +257,27 @@ export default function LuzhouAviation3DSpace() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
             <div>
               <div className="text-sm tracking-[0.18em] text-cyan-700">服务内容</div>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight">面向不同人群的创客服务体系</h2>
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+                面向不同人群的创客服务体系
+              </h2>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
-                以AI创意设计与3D智造实践为主线，针对不同年龄和不同合作对象，形成分层次、多场景、可拓展的服务体系。
+                以AI创意设计与3D智造实践为主线，针对不同年龄和不同合作对象，
+                形成分层次、多场景、可拓展的服务体系。
               </p>
+
               <div className="mt-8 grid gap-4">
                 {services.map((item) => (
-                  <div key={item.group} className="rounded-[1.5rem] border border-slate-200 bg-white p-6">
+                  <div
+                    key={item.group}
+                    className="rounded-[1.5rem] border border-slate-200 bg-white p-6"
+                  >
                     <div className="text-lg font-semibold">{item.group}</div>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {item.items.map((sub) => (
-                        <span key={sub} className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
+                        <span
+                          key={sub}
+                          className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700"
+                        >
                           {sub}
                         </span>
                       ))}
@@ -249,8 +286,13 @@ export default function LuzhouAviation3DSpace() {
                 ))}
               </div>
             </div>
+
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-              <img src={images.workshop} alt="创客课堂与项目实践场景" className="h-[520px] w-full object-cover" />
+              <img
+                src={images.serviceLab}
+                alt="大学生创新实验室与创客实训场景"
+                className="h-[520px] w-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -258,11 +300,17 @@ export default function LuzhouAviation3DSpace() {
         <section id="resources" className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
           <div className="max-w-3xl">
             <div className="text-sm tracking-[0.18em] text-cyan-700">创客资源平台</div>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight">工具、内容与资讯的持续延伸</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+              工具、内容与资讯的持续延伸
+            </h2>
           </div>
+
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {resources.map((item) => (
-              <div key={item.title} className="rounded-[1.75rem] border border-slate-200 bg-white p-8">
+              <div
+                key={item.title}
+                className="rounded-[1.75rem] border border-slate-200 bg-white p-8"
+              >
                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-600">{item.desc}</p>
               </div>
@@ -279,16 +327,28 @@ export default function LuzhouAviation3DSpace() {
                 <span className="mt-2 block">开启智能制造体验与合作</span>
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
-                欢迎学校、家长、大学院校及合作单位咨询预约，了解科普体验、创客课程、研学实践、大学生实训与产业参访等服务内容。
+                欢迎学校、家长、大学院校及合作单位咨询预约，了解科普体验、创客课程、研学实践、
+                大学生实训与产业参访等服务内容。
               </p>
               <div className="mt-8 grid gap-4">
-                <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">联系人：待填写</div>
-                <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">联系电话：待填写</div>
-                <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">微信二维码：待替换</div>
+                <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
+                  联系人：待填写
+                </div>
+                <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
+                  联系电话：待填写
+                </div>
+                <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
+                  微信二维码：待替换
+                </div>
               </div>
             </div>
+
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-              <img src={images.contact} alt="交流与合作咨询场景" className="h-full min-h-[420px] w-full object-cover" />
+              <img
+                src={images.contactLab}
+                alt="学生创新实验室团队协作场景"
+                className="h-full min-h-[420px] w-full object-cover"
+              />
             </div>
           </div>
         </section>
