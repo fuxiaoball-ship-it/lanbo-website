@@ -332,13 +332,13 @@ export default function LuzhouAviation3DSpace() {
               </p>
               <div className="mt-8 grid gap-4">
                 <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
-                  联系人：待填写
+                  联系人：付老师
                 </div>
                 <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
-                  联系电话：待填写
+                  联系电话：13982755554
                 </div>
                 <div className="rounded-[1.25rem] border border-slate-200 px-5 py-4 text-sm text-slate-700">
-                  微信二维码：待替换
+                  电子邮箱：10900746@qq.com
                 </div>
               </div>
             </div>
