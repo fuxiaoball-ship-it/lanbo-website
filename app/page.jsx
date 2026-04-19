@@ -73,7 +73,7 @@ export default function LuzhouAviation3DSpace() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c]" />
         <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-8 lg:px-10 lg:pb-28 lg:pt-10">
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
-            <div className="text-sm tracking-wide text-white/80">泸州航发3D智造空间</div>
+            <div className="text-sm tracking-wide text-white/80">泸州蓝博航发职业培训学校有限公司</div>
             <nav className="hidden gap-8 text-sm text-white/70 md:flex">
               <a href="#engines" className="transition hover:text-white">
                 双引擎
@@ -356,7 +356,7 @@ export default function LuzhouAviation3DSpace() {
 
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-10">
-          <div>© 2026 泸州航发3D智造空间</div>
+         <div>© 2026 泸州蓝博航发职业培训学校有限公司</div>
           <div>面向未来智能制造的人才启蒙与实践平台</div>
         </div>
       </footer>
