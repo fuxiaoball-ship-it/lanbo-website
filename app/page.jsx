@@ -69,11 +69,21 @@ export default function LuzhouAviation3DSpace() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="relative overflow-hidden bg-[#06162d] text-white">
+           <header className="relative overflow-hidden bg-[#06162d] text-white">
         <div className="absolute inset-0 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c]" />
-        <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-8 lg:px-10 lg:pb-28 lg:pt-10">
+        <div className="max-w-7xl mx-auto px-6 pt-6 pb-12">
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
-            <div className="text-sm tracking-wide text-white/80">泸州蓝博航发职业培训学校有限公司</div>
+  <div className="flex items-center gap-3">
+    <img
+      src="/images/hf-logo.png"
+      alt="泸州航发logo"
+      className="h-10 w-auto object-contain"
+    />
+
+    <div className="text-sm tracking-wide text-white/80">
+      泸州蓝博航发职业培训学校有限公司
+    </div>
+  </div>
             <nav className="hidden gap-8 text-sm text-white/70 md:flex">
               <a href="#engines" className="transition hover:text-white">
                 双引擎
@@ -93,34 +103,27 @@ export default function LuzhouAviation3DSpace() {
             </nav>
           </div>
 
-          <div className="grid gap-14 pt-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-20">
+          <div className="grid gap-14 pt-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-8">
             <div className="max-w-2xl">
-  <div className="mb-6">
-    <img
-      src="/images/hf-logo.png"
-      alt="泸州航发logo"
-      className="h-20 w-auto object-contain"
-    />
-  </div>
+            
 
-  <div className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm text-white/90 backdrop-blur-md">
-    AI × 3D打印 × 智能制造
-  </div>
+              <div className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm text-white/90 backdrop-blur-md">
+                AI × 3D打印 × 智能制造
+              </div>
 
-  <div className="mt-7 text-[26px] lg:text-[32px] font-semibold text-white/95 tracking-tight">
-    泸州航发3D智造空间
-  </div>
+              <div className="mt-7 text-[26px] lg:text-[32px] font-semibold text-white/95 tracking-tight">
+                泸州航发3D智造空间
+              </div>
 
-  <h1 className="mt-6 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
-    面向未来智能制造的
-    <span className="block text-white">人才启蒙与实践平台</span>
-  </h1>
+              <h1 className="mt-6 text-4xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-cyan-300">
+                面向未来智能制造的
+                <span className="block text-white">人才启蒙与实践平台</span>
+              </h1>
 
-  <p className="mt-8 max-w-xl text-base leading-8 text-white/75 lg:text-lg">
-    以AI创意设计与3D打印制造为核心，构建从认知启蒙到实践创造的完整创客体系，
-    让更多青少年、大学生与合作单位走进智能制造世界。
-  </p>
-</div>
+              <p className="mt-8 max-w-xl text-base leading-8 text-white/75 lg:text-lg">
+                以AI创意设计与3D打印制造为核心，构建从认知启蒙到实践创造的完整创客体系，
+                让更多青少年、大学生与合作单位走进智能制造世界。
+              </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
