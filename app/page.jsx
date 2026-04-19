@@ -301,7 +301,7 @@ export default function LuzhouAviation3DSpace() {
           <div className="max-w-3xl">
             <div className="text-sm tracking-[0.18em] text-cyan-700">创客资源平台</div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight">
-              工具、内容与资讯的持续延伸
+              工具、内容与资讯的持续延伸（建设中）
             </h2>
           </div>
 
