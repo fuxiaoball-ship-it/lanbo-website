@@ -75,7 +75,7 @@ export default function LuzhouAviation3DSpace() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c]" />
 
         <div className="relative mx-auto max-w-7xl px-6 pt-6 pb-10 lg:px-10 lg:pt-8 lg:pb-20">
-          <div className="flex items-center justify-between border-b border-white/10 pb-3">
+          <div className="fixed top-0 left-0 w-full z-50 flex items-center justify-between border-b border-white/10 pb-3 px-6 lg:px-10 bg-[#06264a]/95 backdrop-blur-md">
             <div className="flex items-center gap-3">
               <img
                 src="/images/hf-logo.png"
