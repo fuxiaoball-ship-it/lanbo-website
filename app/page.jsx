@@ -10,7 +10,7 @@ export default function LuzhouAviation3DSpace() {
 
   service: '/images/service-lab.jpg',   // ← 新增这行
   contactLab: '/images/contact-lab.jpg',
-};;
+};
 
   const pathways = [
     {
@@ -71,10 +71,10 @@ export default function LuzhouAviation3DSpace() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-50 overflow-hidden bg-[#06162d]/85 text-white backdrop-blur-md">
+     <header className="relative overflow-visible bg-[#06162d]/85 text-white backdrop-blur-md">
         <div className="absolute inset-0 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c]" />
 
-        <div className="relative mx-auto max-w-7xl px-6 pt-6 pb-16 lg:px-10 lg:pt-8 lg:pb-20">
+        <div className="relative mx-auto max-w-7xl px-6 pt-6 pb-10 lg:px-10 lg:pt-8 lg:pb-20">
           <div className="flex items-center justify-between border-b border-white/10 pb-3">
             <div className="flex items-center gap-3">
               <img
@@ -145,7 +145,7 @@ export default function LuzhouAviation3DSpace() {
             </div>
 
             <div>
-             <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
+             <div className="overflow-visible rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
                 <img
                   src={images.hero}
                   alt="3D打印设备与智能制造场景"
@@ -171,7 +171,7 @@ export default function LuzhouAviation3DSpace() {
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+            <div className="overflow-visible rounded-[2rem] border border-slate-200 bg-white shadow-sm">
               <img
                 src={images.engineAi}
                 alt="AI设计与数字建模场景"
@@ -189,7 +189,7 @@ export default function LuzhouAviation3DSpace() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+            <div className="overflow-visible rounded-[2rem] border border-slate-200 bg-white shadow-sm">
               <img
                 src={images.enginePrint}
                 alt="3D打印制造过程"
@@ -247,7 +247,7 @@ export default function LuzhouAviation3DSpace() {
               </p>
             </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
+            <div className="overflow-visible rounded-[2rem] border border-slate-200 bg-white">
               <img
                 src={images.industryFactory}
                 alt="大型3D打印工场场景"
@@ -255,7 +255,7 @@ export default function LuzhouAviation3DSpace() {
               />
             </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
+            <div className="overflow-visible rounded-[2rem] border border-slate-200 bg-white">
               <img
                 src={images.industryExpert}
                 alt="专家研究3D打印设备"
@@ -314,7 +314,7 @@ export default function LuzhouAviation3DSpace() {
       </div>
     </div>
 
-    <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl">
+    <div className="overflow-visible rounded-[2rem] border border-slate-200 bg-white shadow-xl">
       <img
         src={images.service}
         alt="创客教育场景"
@@ -371,7 +371,7 @@ export default function LuzhouAviation3DSpace() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
+            <div className="overflow-visible rounded-[2rem] border border-slate-200 bg-white">
               <img
                 src={images.contactLab}
                 alt="学生创新实验室团队协作场景"
