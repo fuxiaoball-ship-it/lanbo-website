@@ -71,11 +71,12 @@ export default function LuzhouAviation3DSpace() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-     <header className="fixed top-0 left-0 w-full z-50 overflow-visible bg-gradient-to-r from-[#041a38]/95 via-[#06264a]/95 to-[#0b5c88]/95 text-white backdrop-blur-md">
+     <header className="relative overflow-visible bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c] text-white">
         <div className="absolute inset-0 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c]" />
 
-        <div className="relative mx-auto max-w-7xl px-6 pt-28 pb-10 lg:px-10 lg:pt-8 lg:pb-20">
-         <div className="flex items-center justify-between border-b border-white/10 pb-3">
+        <div className="relative mx-auto max-w-7xl px-6 pt-28 pb-10 lg:px-10 lg:pt-32 lg:pb-20">
+         <div className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-gradient-to-r from-[#061122] via-[#0a2746] to-[#0b567c] backdrop-blur-md">
+  <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
             <div className="flex items-center gap-3">
               <img
                 src="/images/hf-logo.png"
@@ -105,6 +106,7 @@ export default function LuzhouAviation3DSpace() {
               </a>
             </nav>
           </div>
+</div>
 
           <div className="grid gap-10 pt-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-8">
             <div className="max-w-2xl">
